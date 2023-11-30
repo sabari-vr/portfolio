@@ -35,8 +35,8 @@ const About = () => {
               <b className="yellow"> and Solidity.</b>
               <br />
               <br />I have a passion for working with{" "}
-              <b className="yellow">Node.js, MongoDB,</b> (although i'm working
-              as frond-end developer) and
+              <b className="yellow">Node.js, MongoDB,</b> (although i'm
+              currently working as frond-end developer) and
               <i>
                 <b className="yellow">
                   {" "}
@@ -78,7 +78,7 @@ const About = () => {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/19sajib"
+                  href="https://github.com/sabari-vr"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -100,7 +100,7 @@ const About = () => {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/19sajib"
+                  href="https://www.linkedin.com/in/sabari-v-r-713043219/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"

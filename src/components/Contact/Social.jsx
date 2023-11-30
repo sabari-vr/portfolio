@@ -33,7 +33,7 @@ const Social = () => {
             </li>
             <li className="contact-icons">
               <a
-                href="https://twitter.com/19sajib"
+                href="https://github.com/sabari-vr"
                 target="_blank"
                 rel="noreferrer"
                 className="icon-color  contact-social-icons"
@@ -53,7 +53,7 @@ const Social = () => {
             </li>
             <li className="contact-icons">
               <a
-                href="https://www.instagram.com/19sajib"
+                href="https://www.linkedin.com/in/sabari-v-r-713043219/"
                 target="_blank"
                 rel="noreferrer"
                 className="icon-color contact-social-icons"
