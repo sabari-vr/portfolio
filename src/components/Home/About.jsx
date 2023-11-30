@@ -67,7 +67,7 @@ const About = () => {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/19sajib"
+                  href="https://github.com/sabari-vr"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -89,7 +89,7 @@ const About = () => {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/19sajib/"
+                  href="https://www.linkedin.com/in/sabari-v-r-713043219/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
