@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Spinner } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import "./Contact.css";
 
@@ -8,6 +8,7 @@ const Contact = () => {
   const form = useRef();
   const [done, setDone] = useState(false);
   const [notDone, setNotDone] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({});
 
   const handleChange = (e) => {
@@ -22,6 +23,7 @@ const Contact = () => {
     if (!formData.from_name || !formData.reply_to || !formData.message) {
       setNotDone(true);
     } else {
+      setLoading(true);
       // Replace "YOUR_USER_ID" with your actual User ID from EmailJS
       emailjs
         .sendForm(
@@ -33,9 +35,11 @@ const Contact = () => {
         .then(
           (result) => {
             console.log(result.text);
+            setLoading(false);
             setDone(true);
           },
           (error) => {
+            setLoading(false);
             console.log(error.text);
           }
         );
@@ -75,7 +79,16 @@ const Contact = () => {
               {notDone && "Please, fill all the input field"}
             </span>
             <Button type="submit" className="button" disabled={done}>
-              Send
+              {loading ? (
+                <Spinner
+                  animation="border"
+                  role="status"
+                  size="sm"
+                  variant="light"
+                />
+              ) : (
+                "Send"
+              )}
             </Button>
             <span className="done">
               {done &&
