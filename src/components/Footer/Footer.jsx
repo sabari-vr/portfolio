@@ -1,11 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { RiTwitterXFill } from "react-icons/ri";
 // import logo from "../../assets/sLogo.png";
 
 const Footer = () => {
@@ -42,7 +39,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 aria-label="twitter"
               >
-                <AiOutlineTwitter />
+                <RiTwitterXFill />
               </a>
             </li>
             <li className="social-icons">
@@ -58,7 +55,7 @@ const Footer = () => {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.linkedin.com/in/sabari-v-r-713043219/"
+                href="https://www.instagram.com/sabari_v_r/"
                 style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"

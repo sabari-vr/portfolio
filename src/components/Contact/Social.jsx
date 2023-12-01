@@ -1,11 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { RiTwitterXFill } from "react-icons/ri";
 import "./Social.css";
 
 const Social = () => {
@@ -38,7 +35,7 @@ const Social = () => {
                 rel="noreferrer"
                 className="icon-color  contact-social-icons"
               >
-                <AiOutlineTwitter />
+                <RiTwitterXFill />
               </a>
             </li>
             <li className="contact-icons">
@@ -53,7 +50,7 @@ const Social = () => {
             </li>
             <li className="contact-icons">
               <a
-                href="https://www.linkedin.com/in/sabari-v-r-713043219/"
+                href="https://www.instagram.com/sabari_v_r/"
                 target="_blank"
                 rel="noreferrer"
                 className="icon-color contact-social-icons"

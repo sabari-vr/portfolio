@@ -2,12 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import LaptopImg from "../../assets/home-main.svg";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { RiTwitterXFill } from "react-icons/ri";
 
 const About = () => {
   return (
@@ -84,7 +81,7 @@ const About = () => {
                   className="icon-colour  home-social-icons"
                   aria-label="twitter"
                 >
-                  <AiOutlineTwitter />
+                  <RiTwitterXFill />
                 </a>
               </li>
               <li className="social-icons">
@@ -100,7 +97,7 @@ const About = () => {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/sabari-v-r-713043219/"
+                  href="https://www.instagram.com/sabari_v_r/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
