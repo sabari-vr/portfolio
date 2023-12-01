@@ -34,11 +34,11 @@ function NavBar() {
       className={navColour ? "sticky p-0" : "navbar p-0"}
     >
       <Container>
-        <Navbar.Brand className="d-flex">
+        <Navbar.Brand className="d-flex py-2">
           <Link to="/">
             <svg
-              width="280"
-              height="70"
+              width="240"
+              height="60"
               viewBox="0 0 370 88.42068053848587"
               class="css-1j8o68f"
             >
