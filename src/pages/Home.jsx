@@ -10,7 +10,7 @@ const Home = () => {
   const navigate = useNavigate();
   useEffect(() => {
     navigate("/portfolio", { replace: true });
-  }, []);
+  }, [navigate]);
   return (
     <section>
       <Container fluid className="home-section" id="home">

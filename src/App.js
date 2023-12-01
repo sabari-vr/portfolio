@@ -32,6 +32,10 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  console.log = function () {};
+  console.warn = function () {};
+  console.error = function () {};
+
   return (
     <Router>
       <Preloader load={load} />

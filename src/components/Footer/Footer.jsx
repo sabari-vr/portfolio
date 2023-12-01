@@ -6,11 +6,11 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import logo from "../../assets/sLogo.png";
+// import logo from "../../assets/sLogo.png";
 
 const Footer = () => {
-  let date = new Date();
-  let year = date.getFullYear();
+  // let date = new Date();
+  // let year = date.getFullYear();
   return (
     <Container fluid className="footer">
       <Row>
