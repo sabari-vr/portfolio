@@ -31,7 +31,7 @@ const About = () => {
               <br />
               <br />I am proficient in
               <b className="yellow"> Javascript </b>
-              and its subsidarious like React JS, Node JS, React Native
+              and its subsidiaries like React JS, Node JS, React Native
               <b className="yellow"> and Solidity.</b>
               <br />
               <br />I have a passion for working with{" "}
