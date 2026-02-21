@@ -3,6 +3,7 @@ import { Download, Award, Target, Zap } from "lucide-react";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import heroImage from "@/assets/sabari-photo.jpeg";
+import Tilt from "react-parallax-tilt";
 
 const strengths = [
   { icon: Target, title: "Cloud Architecture", desc: "Designing resilient, scalable infrastructure on AWS & Azure" },
@@ -31,11 +32,13 @@ const About = () => {
             viewport={{ once: true }}
             className="flex justify-center"
           >
-            <img
-              src={heroImage}
-              alt="Sabari"
-              className="w-72 h-80 object-cover rounded-2xl border border-border/30 glow-primary"
-            />
+            <Tilt>
+              <img
+                src={heroImage}
+                alt="Sabari"
+                className="w-72 h-80 object-cover rounded-2xl border border-border/30 glow-primary"
+              />
+            </Tilt>
           </motion.div>
 
           {/* Content */}

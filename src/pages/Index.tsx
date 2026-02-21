@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Shield, Cloud, Container } from "lucide-react";
 import Layout from "@/components/Layout";
 import heroImage from "@/assets/sabari-photo.jpeg";
+import Tilt from "react-parallax-tilt";
 
 const FloatingIcon = ({ children, className }: { children: React.ReactNode; className?: string }) => (
   <div className={`absolute glass-card !p-3 glow-primary ${className}`}>
@@ -61,11 +62,13 @@ const Index = () => {
           >
             <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 blur-3xl animate-pulse-glow" />
-              <img
-                src={heroImage}
-                alt="Sabari - DevSecOps Engineer"
-                className="relative z-10 w-full h-full object-cover rounded-3xl border-2 border-border/30 glow-primary"
-              />
+              <Tilt>
+                <img
+                  src={heroImage}
+                  alt="Sabari - DevSecOps Engineer"
+                  className="relative z-10 w-full h-full object-cover rounded-3xl border-2 border-border/30 glow-primary"
+                />
+              </Tilt>
               {/* Floating icons */}
               <FloatingIcon className="animate-float -top-4 -right-4 z-20">
                 <Shield size={20} className="text-primary" />
