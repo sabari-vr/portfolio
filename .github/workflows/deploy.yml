@@ -9,6 +9,7 @@ on:
       - main
 
 jobs:
+
   # --- CD job runs only on main push (merge) ---
   build-and-deploy:
     if: github.event_name == 'push'
