@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, Shield, Cloud, Container } from "lucide-react";
 import Layout from "@/components/Layout";
-import heroImage from "@/assets/sabari-photo.jpeg";
+import heroImage from "@/assets/sabari-photo.png";
 import Tilt from "react-parallax-tilt";
 
 const FloatingIcon = ({ children, className }: { children: React.ReactNode; className?: string }) => (

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Download, Award, Target, Zap } from "lucide-react";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
-import heroImage from "@/assets/sabari-photo.jpeg";
+import heroImage from "@/assets/sabari-photo.png";
 import Tilt from "react-parallax-tilt";
 
 const strengths = [
