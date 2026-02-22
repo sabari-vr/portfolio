@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, Shield, Cloud, Container } from "lucide-react";
 import Layout from "@/components/Layout";
-import heroImage from "@/assets/sabari-photo.png";
+import heroImage from "@/assets/sabari-about-photo.png";
+// import heroImage from "@/assets/newbigimage.png";
 import Tilt from "react-parallax-tilt";
 
 const FloatingIcon = ({ children, className }: { children: React.ReactNode; className?: string }) => (
@@ -63,11 +64,13 @@ const Index = () => {
             <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 blur-3xl animate-pulse-glow" />
               <Tilt>
-                <img
-                  src={heroImage}
-                  alt="Sabari - DevSecOps Engineer"
-                  className="relative z-10 w-full h-full object-cover rounded-3xl border-2 border-border/30 glow-primary"
-                />
+                <div className="rounded-2xl bg-[radial-gradient(circle_at_center,hsla(var(--glow-primary)/0.25)_0%,transparent_55%),radial-gradient(circle_at_center,hsla(var(--glow-primary)/0%)_0%,transparent_75%),radial-gradient(circle_at_center,hsla(var(--glow-primary)/0%)_0%,transparent_95%)]">
+                  <img
+                    src={heroImage}
+                    alt="Sabari - DevSecOps Engineer"
+                    className="relative z-10 w-76 h-85 object-cover rounded-2xl border border-none"
+                  />
+                </div>
               </Tilt>
               {/* Floating icons */}
               <FloatingIcon className="animate-float -top-4 -right-4 z-20">

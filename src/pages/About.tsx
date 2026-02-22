@@ -2,7 +2,8 @@ import { motion } from "framer-motion";
 import { Download, Award, Target, Zap } from "lucide-react";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
-import heroImage from "@/assets/sabari-photo.png";
+// import heroImage from "@/assets/sabari-about-photo.png";
+import heroImage from "@/assets/photo_shop.png";
 import Tilt from "react-parallax-tilt";
 
 const strengths = [
@@ -33,11 +34,18 @@ const About = () => {
             className="flex justify-center"
           >
             <Tilt>
-              <img
+              {/* <img
                 src={heroImage}
                 alt="Sabari"
                 className="w-72 h-80 object-cover rounded-2xl border border-border/30 glow-primary"
-              />
+              /> */}
+              <div className="p-16 rounded-2xl bg-[radial-gradient(circle_at_center,hsla(var(--glow-primary)/0.25)_0%,transparent_55%),radial-gradient(circle_at_center,hsla(var(--glow-primary)/0%)_0%,transparent_75%),radial-gradient(circle_at_center,hsla(var(--glow-primary)/0%)_0%,transparent_95%)]">
+                <img
+                  src={heroImage}
+                  alt="Sabari"
+                  className="w-72 h-80 object-cover rounded-2xl border border-none"
+                />
+              </div>
             </Tilt>
           </motion.div>
 
